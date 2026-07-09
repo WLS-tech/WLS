@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Information System | Students</title>
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<aside class="sidebar">
+
+
+<h2>
+    WLS SIS
+</h2>
+
+
+
+<nav>
+
+<ul>
+
+
+<li>
+<a href="{{ url_for('dashboard') }}">
+🏠 Dashboard
+</a>
+</li>
+
+
+<li>
+<a href="{{ url_for('students') }}">
+👨‍🎓 Students
+</a>
+</li>
+
+
+<li>
+<a href="{{ url_for('results') }}">
+📑 Results
+</a>
+</li>
+
+
+<li>
+<a href="{{ url_for('profile') }}">
+👤 Profile
+</a>
+</li>
+
+
+<li>
+<a href="{{ url_for('admin') }}">
+🔐 Admin Panel
+</a>
+</li>
+
+
+<li>
+<a href="#" id="logoutBtn">
+🚪 Logout
+</a>
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+</aside>
+
+
+
+
+
+<main>
+
+
+
+<header>
+
+<h1>
+Students
+</h1>
+
+
+<p>
+Manage student information.
+</p>
+
+
+</header>
+
+
+
+
+
+
+<section>
+
+
+<h2>
+Search Student
+</h2>
+
+
+
+<input
+
+type="text"
+
+id="searchStudent"
+
+placeholder="Search by ID or Name">
+
+
+
+</section>
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+Student List
+</h2>
+
+
+
+
+<table border="1" id="studentTable">
+
+
+
+<thead>
+
+
+<tr>
+
+<th>
+ID
+</th>
+
+
+<th>
+Full Name
+</th>
+
+
+<th>
+Department
+</th>
+
+
+<th>
+Phone
+</th>
+
+
+<th>
+Status
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+
+<tbody id="studentList">
+
+
+</tbody>
+
+
+
+
+</table>
+
+
+
+</section>
+
+
+
+
+</main>
+
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 Student Information System
+</p>
+
+
+</footer>
+
+
+
+
+
+<script src="{{ url_for('static', filename='js/students.js') }}"></script>
+
+
+</body>
+
+</html>

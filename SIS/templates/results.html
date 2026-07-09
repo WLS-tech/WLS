@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Information System | Results</title>
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<aside class="sidebar">
+
+
+<h2>
+    WLS SIS
+</h2>
+
+
+
+<nav>
+
+<ul>
+
+
+<li>
+<a href="{{ url_for('dashboard') }}">
+🏠 Dashboard
+</a>
+</li>
+
+
+<li>
+<a href="{{ url_for('students') }}">
+👨‍🎓 Students
+</a>
+</li>
+
+
+<li>
+<a href="{{ url_for('results') }}">
+📑 Results
+</a>
+</li>
+
+
+<li>
+<a href="{{ url_for('profile') }}">
+👤 Profile
+</a>
+</li>
+
+
+<li>
+<a href="{{ url_for('admin') }}">
+🔐 Admin Panel
+</a>
+</li>
+
+
+<li>
+<a href="#" id="logoutBtn">
+🚪 Logout
+</a>
+</li>
+
+
+</ul>
+
+</nav>
+
+
+</aside>
+
+
+
+
+
+<main>
+
+
+
+<header>
+
+<h1>
+Student Results
+</h1>
+
+
+<p>
+View semester examination results.
+</p>
+
+
+</header>
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+Search Result
+</h2>
+
+
+
+<input
+
+type="text"
+
+id="searchResult"
+
+placeholder="Enter Student ID">
+
+
+
+<select id="semester">
+
+<option>
+Term 1
+</option>
+
+
+<option>
+Term 2
+</option>
+
+
+<option>
+Term 3
+</option>
+
+
+</select>
+
+
+
+<button type="button" id="searchBtn">
+Search
+</button>
+
+
+
+</section>
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+Results
+</h2>
+
+
+
+<table border="1" id="resultsTable">
+
+
+
+<thead>
+
+
+<tr>
+
+<th>
+Subject
+</th>
+
+
+<th>
+Grade
+</th>
+
+
+<th>
+Remark
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+
+<tbody id="resultsBody">
+
+
+</tbody>
+
+
+
+
+</table>
+
+
+
+</section>
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+<footer>
+
+
+<p>
+© 2026 Student Information System
+</p>
+
+
+</footer>
+
+
+
+
+
+<script src="{{ url_for('static', filename='js/results.js') }}"></script>
+
+
+</body>
+
+</html>

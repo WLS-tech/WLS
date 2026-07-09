@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Information System | Profile</title>
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+
+
+</head>
+
+
+<body>
+
+
+
+<aside class="sidebar">
+
+
+    <h2>
+        WLS SIS
+    </h2>
+
+
+
+    <nav>
+
+        <ul>
+
+
+            <li>
+                <a href="{{ url_for('dashboard') }}">
+                    🏠 Dashboard
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#">
+                    👨‍🎓 Students
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#">
+                    📑 Results
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#">
+                    👤 Profile
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#">
+                    🔐 Admin Panel
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#" id="logoutBtn">
+                    🚪 Logout
+                </a>
+            </li>
+
+
+        </ul>
+
+
+    </nav>
+
+
+</aside>
+
+
+
+
+
+<main>
+
+
+
+<header>
+
+    <h1>
+        Student Profile
+    </h1>
+
+
+    <p>
+        Your personal information.
+    </p>
+
+
+</header>
+
+
+
+
+
+<section>
+
+
+
+<h2>
+    Profile Information
+</h2>
+
+
+
+
+<img
+
+    src="{{ url_for('static', filename='images/profile.png') }}"
+
+    alt="Student Profile Picture"
+
+    width="150">
+
+
+
+
+
+<input
+
+    type="file"
+
+    id="imageUpload"
+
+    accept="image/*">
+
+
+
+
+
+<table border="1">
+
+
+<tr>
+
+<th>
+    Full Name
+</th>
+
+<td id="studentName">
+    Student
+</td>
+
+
+</tr>
+
+
+
+
+<tr>
+
+<th>
+    Student ID
+</th>
+
+<td id="studentID">
+    -
+</td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+<th>
+    Phone Number
+</th>
+
+<td id="studentPhone">
+    -
+</td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+<th>
+    Email
+</th>
+
+<td id="studentEmail">
+    -
+</td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+<th>
+    Department
+</th>
+
+<td id="studentDepartment">
+    -
+</td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+<th>
+    Verification Status
+</th>
+
+<td>
+    Verified ✅
+</td>
+
+
+</tr>
+
+
+
+</table>
+
+
+
+<br>
+
+
+
+<button id="editProfile">
+
+    Edit Profile
+
+</button>
+
+
+
+</section>
+
+
+
+</main>
+
+
+
+
+
+
+<footer>
+
+
+<p>
+© 2026 Student Information System
+</p>
+
+
+</footer>
+
+
+
+
+
+<script src="{{ url_for('static', filename='js/profile.js') }}"></script>
+
+
+
+</body>
+
+</html>

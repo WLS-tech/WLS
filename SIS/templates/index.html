@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Information System | Dashboard</title>
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<aside class="sidebar">
+
+
+    <h2>
+        WLS SIS
+    </h2>
+
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="{{ url_for('dashboard') }}">
+                    🏠 Dashboard
+                </a>
+            </li>
+
+
+            <li>
+                <a href="{{ url_for('students') }}">
+    👨‍🎓 Students
+</a>
+            </li>
+
+
+            <li>
+               <a href="{{ url_for('results') }}">
+    📑 Results
+</a>
+            </li>
+
+
+            <li>
+                <a href="{{ url_for('profile') }}">
+    👤 Profile
+</a>
+            </li>
+
+
+            <li>
+                <a href="{{ url_for('admin') }}">
+    🔐 Admin Panel
+</a>
+            </li>
+
+
+            <li>
+                <a href="#" id="logoutBtn">
+                    🚪 Logout
+                </a>
+            </li>
+
+
+        </ul>
+
+    </nav>
+
+
+</aside>
+
+
+
+
+
+<main class="dashboard-main">
+
+
+
+<header>
+
+
+    <h1>
+        Dashboard
+    </h1>
+
+
+    <p>
+        Welcome back,
+        <strong id="studentName">
+            Student
+        </strong>
+    </p>
+
+
+
+</header>
+
+
+
+
+
+<section>
+
+
+<h2>
+    Quick Analytics
+</h2>
+
+
+
+<div>
+
+
+<article>
+
+<h3>
+    Total Students
+</h3>
+
+<p>
+    420
+</p>
+
+</article>
+
+
+
+<article>
+
+<h3>
+    Total Teachers
+</h3>
+
+<p>
+    38
+</p>
+
+</article>
+
+
+
+
+<article>
+
+<h3>
+    Departments
+</h3>
+
+<p>
+    5
+</p>
+
+</article>
+
+
+
+
+<article>
+
+<h3>
+    Pending Verification
+</h3>
+
+<p>
+    12
+</p>
+
+</article>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section>
+
+
+<h2>
+    Announcements
+</h2>
+
+
+
+<article>
+
+<h3>
+    📢 Registration Notice
+</h3>
+
+<p>
+    Registration opens next Monday.
+</p>
+
+
+</article>
+
+
+
+<article>
+
+<h3>
+    📢 Final Exams
+</h3>
+
+<p>
+    Final examinations begin next week.
+</p>
+
+
+</article>
+
+
+
+<article>
+
+<h3>
+    📢 Holiday
+</h3>
+
+<p>
+    Campus will be closed on Friday.
+</p>
+
+
+</article>
+
+
+
+</section>
+
+
+
+
+
+<section>
+
+
+<h2>
+    Recent Activity
+</h2>
+
+
+<ul>
+
+<li>
+✔ New student registered.
+</li>
+
+
+<li>
+✔ Results uploaded.
+</li>
+
+
+<li>
+✔ Announcement posted.
+</li>
+
+
+<li>
+✔ Student profile updated.
+</li>
+
+
+</ul>
+
+
+
+</section>
+
+
+
+
+</main>
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 Student Information System
+</p>
+
+</footer>
+
+
+
+
+
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+
+
+</body>
+
+</html>

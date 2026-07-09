@@ -1,0 +1,306 @@
+/* =========================
+   Global Reset
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+:root{
+
+    --glass-bg:rgba(255,255,255,0.18);
+
+    --glass-border:rgba(255,255,255,0.25);
+
+    --blur:blur(35px);
+
+    --shadow:
+    0 20px 60px rgba(0,0,0,0.25);
+
+    --blue:#2563eb;
+
+    --text:white;
+
+}
+
+
+
+/* =========================
+   Body
+========================= */
+
+
+body{
+
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    "Segoe UI",
+    sans-serif;
+
+
+    min-height:100vh;
+
+
+    overflow-x:hidden;
+
+
+    color:var(--text);
+
+
+    background:
+
+    radial-gradient(
+        circle at top left,
+        #94a3b8,
+        transparent 35%
+    ),
+
+    radial-gradient(
+        circle at bottom right,
+        #38bdf8,
+        transparent 35%
+    ),
+
+    linear-gradient(
+        135deg,
+        #1e3a8a,
+        #2563eb,
+        #0ea5e9
+    );
+
+}
+
+
+
+
+/* =========================
+   Background Blur Lights
+========================= */
+
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    width:350px;
+
+    height:350px;
+
+    top:-120px;
+
+    left:-120px;
+
+
+    background:
+    rgba(255,255,255,.35);
+
+
+    border-radius:50%;
+
+
+    filter:blur(120px);
+
+
+    z-index:-1;
+
+}
+
+
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:400px;
+
+    height:400px;
+
+
+    right:-150px;
+
+    bottom:-150px;
+
+
+    background:
+    rgba(56,189,248,.4);
+
+
+    border-radius:50%;
+
+
+    filter:blur(120px);
+
+
+    z-index:-1;
+
+}
+
+
+
+
+
+/* =========================
+   Headers
+========================= */
+
+
+header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+
+
+header h1{
+
+    font-size:42px;
+
+    font-weight:700;
+
+}
+
+
+
+header p{
+
+    margin-top:10px;
+
+    opacity:.8;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   Inputs
+========================= */
+
+
+input,
+select{
+
+
+    border:none;
+
+    outline:none;
+
+
+    font-family:inherit;
+
+}
+
+
+
+
+input::placeholder{
+
+    color:rgba(255,255,255,.75);
+
+}
+
+
+
+
+/* =========================
+   Buttons
+========================= */
+
+
+button{
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+}
+
+
+
+button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+
+
+
+/* =========================
+   Links
+========================= */
+
+
+a{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+
+
+a:hover{
+
+    opacity:.8;
+
+}
+
+
+
+
+
+/* =========================
+   Footer
+========================= */
+
+
+footer{
+
+    text-align:center;
+
+    opacity:.75;
+
+    margin-top:20px;
+
+}
+
+
+
+
+
+/* =========================
+   Mobile
+========================= */
+
+
+@media(max-width:520px){
+
+
+header h1{
+
+    font-size:30px;
+
+}
+
+
+}
